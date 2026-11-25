@@ -1,0 +1,28 @@
+flowchart TD
+    U["User preferences"] --> CLI["CLI: src/main.py"]
+    CLI --> DATA["Song catalogue: data/songs.csv"]
+    PREF["Genre, mood, energy"] --> REC
+
+    DATA --> REC["Recommendation engine: src/recommender.py"]
+    REC --> R["Ranked recommendations"]
+
+    R --> AUD["Reliability auditor: src/auditor.py"]
+    DATA --> AUD
+    PREF --> AUD
+
+    AUD --> REPORT["Audit report: scores, coverage, diversity, findings"]
+    R --> OUT["CLI results"]
+    REPORT --> OUT
+
+    subgraph Evaluation
+        TEST["pytest test suite"]
+        EXP["Three experimental scripts"]
+        TEST --> REC
+        TEST --> AUD
+        EXP --> REC
+        EXP --> AUD
+        EXP --> JSON["JSON experimental results"]
+    end
+
+    OUT --> HUMAN["Human review and interpretation"]
+    JSON --> HUMAN
