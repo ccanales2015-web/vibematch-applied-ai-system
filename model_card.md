@@ -486,6 +486,29 @@ OpenAI ChatGPT (GPT-6) assisted with planning, implementation guidance,
 experimental design, test development, documentation, and interpretation
 of results for the VibeMatch reliability auditor.
 
+**Accepted AI suggestions.** The developer accepted and implemented
+AI-assisted recommendations to:
+
+- Introduce an independent reliability auditor without modifying the
+  underlying recommendation algorithm.
+- Evaluate recommendation strength, catalogue coverage, and genre
+  diversity.
+- Establish explicit thresholds for weak recommendations and limited
+  catalogue coverage.
+- Produce structured findings and warnings to make potential reliability
+  problems visible.
+- Develop automated tests and experiments to evaluate auditor behavior
+  and recommendation consistency.
+
+**Rejected and revised suggestions.** No major AI suggestions were
+explicitly rejected outright during the documented development process.
+Suggestions were generally evaluated through developer review,
+implementation, and testing. Where testing exposed incorrect or
+misleading behavior, the implementation was revised rather than accepted
+without qualification. For example, testing revealed that informational
+findings incorrectly contributed to an overall warning status. This
+behavior was corrected, and regression tests were added.
+
 The developer manually reviewed and applied proposed code changes,
 executed the experiments, inspected their outputs, and verified the
 resulting implementation through automated tests.
