@@ -102,3 +102,53 @@ def test_invalid_recommendation_score_is_rejected():
         audit_recommendations(
             recommendations, songs, {"genre": "pop"}
         )
+
+
+def test_limited_coverage_info_does_not_cause_warning():
+    songs = [
+        make_song("Pop Song", "pop")
+    ] + [
+        make_song(str(i), "rock") for i in range(9)
+    ]
+
+    recommendations = [
+        make_recommendation(str(i), "rock", 0.8)
+        for i in range(5)
+    ]
+
+    report = audit_recommendations(
+        recommendations, songs, {"genre": "pop"}
+    )
+
+    assert report["genre_coverage"] == 0.1
+    assert report["status"] == "passed"
+    assert report["warnings"] == []
+
+    assert any(
+        finding["category"] == "catalogue_coverage"
+        and finding["severity"] == "info"
+        for finding in report["findings"]
+    )
+
+
+def test_low_diversity_info_does_not_cause_warning():
+    songs = [make_song(str(i), "pop") for i in range(10)]
+
+    recommendations = [
+        make_recommendation("A", "pop", 0.9),
+        make_recommendation("B", "pop", 0.8),
+    ]
+
+    report = audit_recommendations(
+        recommendations, songs, {"genre": "pop"}
+    )
+
+    assert report["genre_diversity"] == 0.5
+    assert report["status"] == "passed"
+    assert report["warnings"] == []
+
+    assert any(
+        finding["category"] == "diversity"
+        and finding["severity"] == "info"
+        for finding in report["findings"]
+    )

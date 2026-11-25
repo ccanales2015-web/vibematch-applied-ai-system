@@ -1,0 +1,281 @@
+{
+    "runs": 10,
+    "identical_outputs": true,
+    "baseline": {
+        "titles": [
+            "Sunrise City",
+            "Rooftop Lights",
+            "Gym Hero",
+            "Night Drive Loop",
+            "Storm Runner"
+        ],
+        "scores": [
+            0.993333,
+            0.653333,
+            0.623333,
+            0.316667,
+            0.296667
+        ],
+        "average_score": 0.577,
+        "weak_matches": [
+            "Night Drive Loop",
+            "Storm Runner"
+        ],
+        "warnings": [
+            "One or more recommendations have weak match scores."
+        ],
+        "status": "warning"
+    },
+    "all_results": [
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        },
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        },
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        },
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        },
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        },
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        },
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        },
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        },
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        },
+        {
+            "titles": [
+                "Sunrise City",
+                "Rooftop Lights",
+                "Gym Hero",
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "scores": [
+                0.993333,
+                0.653333,
+                0.623333,
+                0.316667,
+                0.296667
+            ],
+            "average_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        }
+    ]
+}

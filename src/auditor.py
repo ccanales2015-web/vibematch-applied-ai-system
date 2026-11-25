@@ -116,10 +116,6 @@ def audit_recommendations(
                 "details": f"No catalogue representation for {preferred_genre}.",
             })
         elif genre_coverage < LOW_COVERAGE_THRESHOLD:
-            warnings.append(
-                f"The preferred genre '{preferred_genre}' has limited "
-                "catalogue representation."
-            )
             findings.append({
                 "category": "catalogue_coverage",
                 "severity": "info",
@@ -139,9 +135,6 @@ def audit_recommendations(
     )
 
     if len(recommended_genres) <= 1 and len(recommendations) > 1:
-        warnings.append(
-            "Recommendations contain only one represented genre."
-        )
         findings.append({
             "category": "diversity",
             "severity": "info",

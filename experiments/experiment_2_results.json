@@ -1,0 +1,52 @@
+[
+    {
+        "test": "A",
+        "matching_songs": 0,
+        "catalogue_size": 10,
+        "coverage": 0.0,
+        "coverage_findings": [
+            {
+                "category": "catalogue_coverage",
+                "severity": "warning",
+                "details": "No catalogue representation for pop."
+            }
+        ],
+        "warnings": [
+            "The catalogue contains no songs in the preferred genre: pop."
+        ],
+        "status": "warning"
+    },
+    {
+        "test": "B",
+        "matching_songs": 1,
+        "catalogue_size": 10,
+        "coverage": 0.1,
+        "coverage_findings": [
+            {
+                "category": "catalogue_coverage",
+                "severity": "info",
+                "details": "1 of 10 songs match."
+            }
+        ],
+        "warnings": [],
+        "status": "passed"
+    },
+    {
+        "test": "C",
+        "matching_songs": 2,
+        "catalogue_size": 10,
+        "coverage": 0.2,
+        "coverage_findings": [],
+        "warnings": [],
+        "status": "passed"
+    },
+    {
+        "test": "D",
+        "matching_songs": 3,
+        "catalogue_size": 10,
+        "coverage": 0.3,
+        "coverage_findings": [],
+        "warnings": [],
+        "status": "passed"
+    }
+]

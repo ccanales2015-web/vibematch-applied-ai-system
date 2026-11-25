@@ -1,0 +1,204 @@
+[
+    {
+        "profile": "Baseline",
+        "preferences": {
+            "genre": "pop",
+            "mood": "happy",
+            "energy": 0.8
+        },
+        "recommendations": [
+            {
+                "title": "Sunrise City",
+                "genre": "pop",
+                "score": 0.993,
+                "explanation": "genre match: pop = pop (similarity 1.00); mood match: happy = happy (similarity 1.00); energy 0.82 vs target 0.80 (similarity 0.98)"
+            },
+            {
+                "title": "Rooftop Lights",
+                "genre": "indie pop",
+                "score": 0.653,
+                "explanation": "genre mismatch: indie pop vs preferred pop (similarity 0.00); mood match: happy = happy (similarity 1.00); energy 0.76 vs target 0.80 (similarity 0.96)"
+            },
+            {
+                "title": "Gym Hero",
+                "genre": "pop",
+                "score": 0.623,
+                "explanation": "genre match: pop = pop (similarity 1.00); mood mismatch: intense vs preferred happy (similarity 0.00); energy 0.93 vs target 0.80 (similarity 0.87)"
+            },
+            {
+                "title": "Night Drive Loop",
+                "genre": "synthwave",
+                "score": 0.317,
+                "explanation": "genre mismatch: synthwave vs preferred pop (similarity 0.00); mood mismatch: moody vs preferred happy (similarity 0.00); energy 0.75 vs target 0.80 (similarity 0.95)"
+            },
+            {
+                "title": "Storm Runner",
+                "genre": "rock",
+                "score": 0.297,
+                "explanation": "genre mismatch: rock vs preferred pop (similarity 0.00); mood mismatch: intense vs preferred happy (similarity 0.00); energy 0.91 vs target 0.80 (similarity 0.89)"
+            }
+        ],
+        "audit": {
+            "recommendation_count": 5,
+            "average_match_score": 0.577,
+            "weak_matches": [
+                "Night Drive Loop",
+                "Storm Runner"
+            ],
+            "genre_coverage": 0.2,
+            "genre_diversity": 0.8,
+            "findings": [
+                {
+                    "category": "match_strength",
+                    "severity": "warning",
+                    "details": [
+                        "Night Drive Loop",
+                        "Storm Runner"
+                    ]
+                }
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        }
+    },
+    {
+        "profile": "Represented genre",
+        "preferences": {
+            "genre": "lofi",
+            "mood": "chill",
+            "energy": 0.4
+        },
+        "recommendations": [
+            {
+                "title": "Midnight Coding",
+                "genre": "lofi",
+                "score": 0.993,
+                "explanation": "genre match: lofi = lofi (similarity 1.00); mood match: chill = chill (similarity 1.00); energy 0.42 vs target 0.40 (similarity 0.98)"
+            },
+            {
+                "title": "Library Rain",
+                "genre": "lofi",
+                "score": 0.983,
+                "explanation": "genre match: lofi = lofi (similarity 1.00); mood match: chill = chill (similarity 1.00); energy 0.35 vs target 0.40 (similarity 0.95)"
+            },
+            {
+                "title": "Focus Flow",
+                "genre": "lofi",
+                "score": 0.667,
+                "explanation": "genre match: lofi = lofi (similarity 1.00); mood mismatch: focused vs preferred chill (similarity 0.00); energy 0.40 vs target 0.40 (similarity 1.00)"
+            },
+            {
+                "title": "Spacewalk Thoughts",
+                "genre": "ambient",
+                "score": 0.627,
+                "explanation": "genre mismatch: ambient vs preferred lofi (similarity 0.00); mood match: chill = chill (similarity 1.00); energy 0.28 vs target 0.40 (similarity 0.88)"
+            },
+            {
+                "title": "Coffee Shop Stories",
+                "genre": "jazz",
+                "score": 0.323,
+                "explanation": "genre mismatch: jazz vs preferred lofi (similarity 0.00); mood mismatch: relaxed vs preferred chill (similarity 0.00); energy 0.37 vs target 0.40 (similarity 0.97)"
+            }
+        ],
+        "audit": {
+            "recommendation_count": 5,
+            "average_match_score": 0.719,
+            "weak_matches": [
+                "Coffee Shop Stories"
+            ],
+            "genre_coverage": 0.3,
+            "genre_diversity": 0.6,
+            "findings": [
+                {
+                    "category": "match_strength",
+                    "severity": "warning",
+                    "details": [
+                        "Coffee Shop Stories"
+                    ]
+                }
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores."
+            ],
+            "status": "warning"
+        }
+    },
+    {
+        "profile": "Unsupported genre",
+        "preferences": {
+            "genre": "classical",
+            "mood": "sad",
+            "energy": 0.1
+        },
+        "recommendations": [
+            {
+                "title": "Spacewalk Thoughts",
+                "genre": "ambient",
+                "score": 0.273,
+                "explanation": "genre mismatch: ambient vs preferred classical (similarity 0.00); mood mismatch: chill vs preferred sad (similarity 0.00); energy 0.28 vs target 0.10 (similarity 0.82)"
+            },
+            {
+                "title": "Library Rain",
+                "genre": "lofi",
+                "score": 0.25,
+                "explanation": "genre mismatch: lofi vs preferred classical (similarity 0.00); mood mismatch: chill vs preferred sad (similarity 0.00); energy 0.35 vs target 0.10 (similarity 0.75)"
+            },
+            {
+                "title": "Coffee Shop Stories",
+                "genre": "jazz",
+                "score": 0.243,
+                "explanation": "genre mismatch: jazz vs preferred classical (similarity 0.00); mood mismatch: relaxed vs preferred sad (similarity 0.00); energy 0.37 vs target 0.10 (similarity 0.73)"
+            },
+            {
+                "title": "Focus Flow",
+                "genre": "lofi",
+                "score": 0.233,
+                "explanation": "genre mismatch: lofi vs preferred classical (similarity 0.00); mood mismatch: focused vs preferred sad (similarity 0.00); energy 0.40 vs target 0.10 (similarity 0.70)"
+            },
+            {
+                "title": "Midnight Coding",
+                "genre": "lofi",
+                "score": 0.227,
+                "explanation": "genre mismatch: lofi vs preferred classical (similarity 0.00); mood mismatch: chill vs preferred sad (similarity 0.00); energy 0.42 vs target 0.10 (similarity 0.68)"
+            }
+        ],
+        "audit": {
+            "recommendation_count": 5,
+            "average_match_score": 0.245,
+            "weak_matches": [
+                "Spacewalk Thoughts",
+                "Library Rain",
+                "Coffee Shop Stories",
+                "Focus Flow",
+                "Midnight Coding"
+            ],
+            "genre_coverage": 0.0,
+            "genre_diversity": 0.6,
+            "findings": [
+                {
+                    "category": "match_strength",
+                    "severity": "warning",
+                    "details": [
+                        "Spacewalk Thoughts",
+                        "Library Rain",
+                        "Coffee Shop Stories",
+                        "Focus Flow",
+                        "Midnight Coding"
+                    ]
+                },
+                {
+                    "category": "catalogue_coverage",
+                    "severity": "warning",
+                    "details": "No catalogue representation for classical."
+                }
+            ],
+            "warnings": [
+                "One or more recommendations have weak match scores.",
+                "The catalogue contains no songs in the preferred genre: classical."
+            ],
+            "status": "warning"
+        }
+    }
+]
