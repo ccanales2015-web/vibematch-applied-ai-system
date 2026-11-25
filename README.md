@@ -1,4 +1,4 @@
-# ðŸŽµ VibeMatch 1.0 --- Music Recommender Simulation
+# 🎵 VibeMatch 1.0 --- Music Recommender Simulation
 
 ## Project Summary
 
@@ -36,10 +36,10 @@ Each song in `data/songs.csv` is described by seven features:
   -----------------------------------------------------------------------
   Feature                 Type                    What it means
   ----------------------- ----------------------- -----------------------
-  **genre**               category                e.g.Â pop, lofi, rock,
+  **genre**               category                e.g. pop, lofi, rock,
                                                   jazz
 
-  **mood**                category                e.g.Â happy, chill,
+  **mood**                category                e.g. happy, chill,
                                                   intense, relaxed
 
   **energy**              0 to 1                  how intense or active
@@ -54,7 +54,7 @@ Each song in `data/songs.csv` is described by seven features:
                                                   is for dancing
 
   **acousticness**        0 to 1                  how acoustic
-                                                  (vs.Â electronic) the
+                                                  (vs. electronic) the
                                                   song is
   -----------------------------------------------------------------------
 
@@ -357,7 +357,7 @@ even though its energy (0.76) is close to Sunrise City's (0.82).
 Each variant raises one weight to 3.0 and leaves the others at 1.0.
 
   --------------------------------------------------------------------------
-  Rank           Equal weights  Genre Ã—3       Mood Ã—3        Energy Ã—3
+  Rank           Equal weights  Genre ×3       Mood ×3        Energy ×3
   -------------- -------------- -------------- -------------- --------------
   1              Library Rain   Library Rain   Library Rain   Library Rain
                  1.00           1.00           1.00           1.00
@@ -377,19 +377,19 @@ Each variant raises one weight to 3.0 and leaves the others at 1.0.
   --------------------------------------------------------------------------
 
 **Observed:** - **Top two unchanged.** Library Rain and Midnight Coding
-stayed first and second under every weighting. - **Genre Ã—3** favoured
+stayed first and second under every weighting. - **Genre ×3** favoured
 Focus Flow, which matches the genre (`lofi`) but not the mood. Its
 near-tie with Spacewalk Thoughts at baseline (0.65 vs 0.64) became a
-0.40 gap between the two songs (0.79 vs 0.39). - **Mood Ã—3** reversed
+0.40 gap between the two songs (0.79 vs 0.39). - **Mood ×3** reversed
 positions 3 and 4, favouring Spacewalk Thoughts, which matches the mood
 (`chill`) but not the genre. This was the only variant that changed the
-order of the top five. - **Energy Ã—3** kept the baseline order but
+order of the top five. - **Energy ×3** kept the baseline order but
 compressed the scores. Coffee Shop Stories, which matches neither genre
 nor mood but has energy 0.37, rose from 0.33 to 0.59. - **Largest
 change.** The largest change in any individual song's score from the
 equal-weight baseline was about 0.26. Coffee Shop Stories went from 0.33
-to 0.59 under energy Ã—3, and Spacewalk Thoughts from 0.64 to 0.39 under
-genre Ã—3. - **Explanations don't show weights.** The explanation text
+to 0.59 under energy ×3, and Spacewalk Thoughts from 0.64 to 0.39 under
+genre ×3. - **Explanations don't show weights.** The explanation text
 lists each feature's similarity but not its weight, so it looked the
 same in every variant even when scores changed.
 
@@ -486,7 +486,7 @@ recommendations are objectively relevant or satisfactory to listeners.
     -   As the Rock/Intense run showed, users with under-represented
         tastes run out of good matches quickly.
 -   **All-or-nothing categorical matching.** Genre and mood give no
-    partial credit, so closely related labels (`indie pop` vs.Â `pop`)
+    partial credit, so closely related labels (`indie pop` vs. `pop`)
     are treated as completely different. Each song also has only one
     genre and one mood label, and those labels are subjective.
 -   **Hand-set feature weights.** The weights are a design choice, not
